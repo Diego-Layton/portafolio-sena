@@ -1,0 +1,119 @@
+body{
+    background-color: grey;
+}
+
+.calendario{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 2%;
+}
+
+.contenedor{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1vmax;
+    position: relative;
+}
+
+
+.encabezado{
+    background: rgb( 242, 110, 108);
+border-radius:1vmax;
+margin-bottom: 10%;
+font-size: 160%;
+line-height: 0.5;
+font-weight: bold;
+}
+
+
+.encabezado h1{
+margin-top: 4%;
+margin-left: 5%;
+margin-bottom: 13%;
+color: white;
+}
+
+
+.dia{
+font-size:270%;
+}
+
+.contenedor img{
+    position: absolute;
+    TOP: 36%;
+    left: 13%;
+}
+
+TABLE{
+    text-align: center;
+    font-size: large;
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+
+table th{
+color: rgb( 242, 110, 108);
+}
+
+.gr{
+    color: gray;
+}
+
+
+@media screen  and (max-width: 1050px) {
+    
+    .calendario{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2%;
+        }
+}
+
+
+
+@media screen  and (max-width: 900px) {
+    
+    .calendario{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2%;
+        }
+
+        .contenedor img{
+            TOP: 38%;
+        }
+}
+
+
+
+@media screen  and (max-width: 750px) {
+
+        .contenedor img{
+            TOP: 36%;
+        }
+}
+
+
+@media screen  and (max-width: 500px) {
+    
+    .calendario{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1%;
+        }
+
+        .contenedor img{
+            TOP: 37%;
+        }
+
+}
+
+
+@media screen  and (min-width: 1500px) {
+
+    .contenedor img{
+        TOP: 38%;
+    }
+}

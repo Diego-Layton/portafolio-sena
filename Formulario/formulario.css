@@ -1,0 +1,164 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: x-large;
+  margin: 3%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+background-position-y: 60%;
+}
+
+.contenedor {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -1%;
+  gap: 2.5vmax;
+  border-radius: 3vmax;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: rgb(202, 155, 43);
+}
+
+
+.genero {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4%;
+  margin-top: -6%;
+  color: rgb(97, 97, 97);
+}
+
+.genn {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: rgb(97, 97, 97);
+  margin-top: -6%;
+}
+
+.fechan {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: rgb(97, 97, 97);
+  justify-content: space-between;
+  margin-top: -5%;
+}
+
+#fecha {
+  width: 100%;
+}
+
+#boton {
+  width: 30%;
+  margin-top: 5%;
+  border-radius: 1vmax;
+  margin-bottom: 5%;
+  background: rgb(202, 155, 43);
+  transition: transform .2s;
+  color: rgb(61, 61, 61);
+}
+
+#boton:hover {
+  background-color: rgb(230, 175, 47);
+  transform: scale(1.2);
+}
+
+.contenedor input {
+  width: 50%;
+  font-size: large;
+  border-top: 0vmax;
+  border-left: 0vmax;
+  border-right: 0vmax;
+  accent-color: rgb(230, 175, 47);
+}
+
+.contenedor select {
+  width: 50%;
+  font-size: large;
+  border: 0;
+  background-color: rgb(224, 224, 224);
+}
+
+
+
+
+.alert{
+text-align: left;
+color: red;
+border:0%;
+margin: -2%;
+}
+
+#alert8{
+  margin-top: 4%;
+}
+
+#alert9{
+  margin-bottom: -8%;
+  width: 80%;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+
+  body {
+
+    background-position-x: 30%;
+  }
+
+  .contenedor {
+    width: 50%;
+    margin-top: 4%;
+    
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  body {
+
+    background-position-x: 50%;
+  }
+
+  .contenedor {
+    width: 50%;
+    margin-top: 4%;
+    
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  body {
+
+    background-position-x: 50%;
+  }
+
+  .contenedor {
+    width: 70%;
+    margin-top: 4%;
+    
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  body {
+
+    background-position-x: 50%;
+  }
+
+  .contenedor {
+    width: 100%;
+    margin-top: 4%;
+    
+  }
+}
