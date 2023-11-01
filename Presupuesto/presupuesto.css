@@ -1,0 +1,240 @@
+body {
+  background: rgb(243, 219, 188);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor {
+  border: 1px solid black;
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3%;
+  width: 80%;
+  justify-content: space-between;
+  padding: 3%;
+  border-radius: 0.25vmax;
+  font-size: x-large;
+}
+
+.derecho {
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  align-items: center;
+}
+
+.izquierdo {
+  display: flex;
+  flex-direction: column;
+}
+
+.izquierdoc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7%;
+  height: 50%;
+}
+
+#conp {
+  width: 100%;
+  height: 15%;
+  background: rgb(114, 163, 253);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 3%;
+  border-radius: 0.25vmax;
+}
+
+#conr {
+  width: 100%;
+  height: 15%;
+  background: rgb(223, 170, 224);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 3%;
+  border-radius: 0.25vmax;
+}
+
+.input {
+  height: 3vmax;
+  border-radius: 0.25vmax;
+}
+
+#boton {
+  margin-top: 3%;
+  width: 10%;
+  height: 7%;
+  border-radius: 0.25vmax;
+}
+
+#alerta1 {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3vmax;
+  background: rgb(148, 228, 181);
+  border-radius: 0.25vmax;
+}
+
+#alerta2 {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3vmax;
+  background: rgb(223, 170, 224);
+  border-radius: 0.25vmax;
+}
+
+H1 {
+  color: gray;
+}
+
+.title {
+  color: black;
+  font-size: 400%;
+}
+
+
+#boton {
+
+  background-color: rgb(49, 49, 49);
+  color: white;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 3%;
+  transition: transform .2s;
+  width: 30%;
+  height: 10%;
+}
+
+#boton:hover {
+  background-color: darkred;
+}
+
+
+
+
+
+/* alerta */
+
+.alert-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid darkred;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.884);
+  width: 400px;
+  color: darkred;
+
+}
+
+#alertpres {
+  display: block;
+}
+
+.alert-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#alert-content {
+  font-size: large;
+  color: black;
+
+}
+
+.alert-buttons {
+  text-align: right;
+}
+
+.alert-button {
+  padding: 10px 20px;
+  background-color: rgb(49, 49, 49);
+  color: white;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-top: 3%;
+  transition: transform .2s;
+}
+
+.alert-button:hover {
+  background-color: darkred;
+}
+
+#press {
+  color: rgb(255, 0, 0);
+  font-size: medium;
+}
+
+
+#tabla {
+  width: 100%;
+  text-align: center;
+  border-collapse: separate; 
+  border-spacing: 10px; 
+}
+
+.boton_borrar {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  transition: transform .2s;
+}
+
+.boton_borrar:hover {
+  background-color: darkred;
+}
+
+.valor_gasto{
+  background-color: rgb(0, 0, 255);
+  width: 40%;
+  border-radius: 3vmax;
+  color: white;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+
+  h1{
+    font-size: xx-large;
+    text-align: center;
+  }
+  
+#boton {
+  width: 50%;
+  height: 10%;
+}
+}
+
+@media screen and (max-width: 600px) {
+
+  .contenedor {
+display: flex;
+flex-direction: column;
+
+  }
+
+  #boton {
+    width: 35%;
+    height: 10%;
+  }
+}
