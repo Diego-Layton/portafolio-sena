@@ -160,5 +160,6 @@ function borrar(i, x) {
     saldo = saldo + x.cantidad
     document.getElementById('texsaldo').textContent = saldo.toLocaleString('es-CO', { style: 'currency', currency: 'COP' });
     document.getElementById("alerta2").style.display = "none"
+    document.getElementById("conr").style.backgroundColor = "rgb(223, 170, 224)"
     console.log(registros)
 }
