@@ -119,7 +119,7 @@ transition: transform .2s;
 
 
 #tabla{
-    overflow-block:scroll;
+    overflow-y:scroll;
     display: none;
     position: fixed;
     top: 30%;
