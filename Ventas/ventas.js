@@ -1,7 +1,7 @@
 let productos = [
     {id:1, nombre:"Recordatorios", precio:4000, img:"bautizo.jpeg"},
     {id:2, nombre:"Llaveros", precio:3500, img:"llaveros.jpg"},
-    {id:3, nombre:"Manillas", precio:25000, img:"Manillas.jpg"},
+    {id:3, nombre:"Manillas", precio:25000, img:"manillas.jpg"},
     {id:4, nombre:"Tarjetas de Invitacion", precio:7000, img:"invitacion.jpeg"},
     {id:5, nombre:"Retablos", precio:50000, img:"retablos.jpg"},
     {id:6, nombre:"pocillos Personalizados", precio:18000, img:"pocillos.jpg"},
