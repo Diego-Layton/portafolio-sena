@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./citas.css">
+    <script src="citas.js"></script>
+</head>
+
+<body>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="container">
+
+        <h1>Citas</h1>
+        <div class="encabezado">
+
+            <div class="encabezado_izquierdo">
+                <h3>Filtrar por:</h3>
+                <div>
+                    <input type="radio" class="visualizar" value="abierta" id="abierta" name="filtro">
+                    <label for="abierta">Abiertas</label>
+                </div>
+                <div>
+                    <input type="radio" class="visualizar" value="cerrada" id="cerrada" name="filtro">
+                    <label for="cerrada">Cerradas</label>
+                </div>
+                <div>
+                    <input type="radio" class="visualizar" value="anulada" id="anulada" name="filtro">
+                    <label for="anulada">Anuladas</label>
+                </div>
+            </div>
+
+
+            <div class="encabezado_derecho">
+
+                <button id="boton1" onclick="show_crear_cita()">
+                    <img src="boton2.png" alt="Imagen del botón" width="25%" height="auto">
+                </button>
+
+            </div>
+
+            <div id="crear_cita" class="crear_cita">
+                <div class="top">
+                    <img src="cerrar1.png" onclick="close_crear_cita()" class="icon-x">
+                    <div class="top_izquierdo">
+                        <div style="line-height: 1%;">
+                            <p>Nombre:</p>
+                            <input type="text" id="nombre">
+                        </div>
+                        <div class="tipo" style="margin-top: 10%; align-items: center;">
+                            <p>Tipo:</p>
+                            <select name="tipo" id="tipo" style="width: 55%; height: 70%;">
+                                <option disabled selected="">Seleccione</option>
+                                <option value="gato">Gato</option>
+                                <option value="perro">Perro</option>
+                                <option value="serpiente">Serpiente</option>
+                                <option value="hamster">Hámster</option>
+                                <option value="pez">Pez</option>
+                                <option value="ave">Ave</option>
+                                <option value="conejo">Conejo</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+                    <div class="top_derecho">
+                        <div style="line-height: 1%;">
+                            <p>Propietario:</p>
+                            <input type="text" id="propietario">
+                        </div>
+                        <div style="line-height: 1%;">
+                            <p>Telefono:</p>
+                            <input type="text" id="telefono">
+                        </div>
+                        <div style="line-height: 1%;">
+                            <p>Fecha:</p>
+                            <input type="date" id="fecha">
+                        </div>
+                        <div style="line-height: 1%;">
+                            <p>Hora:</p>
+                            <input type="time" id="hora">
+                        </div>
+                    </div>
+                </div>
+
+                <div style="line-height: 1%;">
+
+                    <p>Sintomas:</p>
+                    <input type="text" id="sintomas" style="width:40vmax; height: 5vmax;">
+
+                </div>
+
+                <div style="display: flex; justify-content: center;">
+                    <input type="button" value="GUARDAR" id="boton2" onclick="validar()">
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- -------------------------------------------------------------------------------------------------------------------- -->
+        <div id="contenedor_citas">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- alerta -->
+    <div class="alert-container" id="alert">
+
+        <div class="alert-header">¡Alerta importante!</div>
+        <div id="alert-content"></div>
+        <div class="alert-buttons">
+            <button class="alert-button" onclick="closeAlert()">Aceptar</button>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
