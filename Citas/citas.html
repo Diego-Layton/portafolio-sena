@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./citas.css">
+    <script src="citas.js"></script>
+</head>
+
+<body>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="container">
+
+        <h1 style="font-family:'Courier New', Courier, monospace; font-size: 4vmax; color: rgb(248, 197, 57);">CENTRO POKEMON</h1>
+        <div class="encabezado">
+
+            <div class="encabezado_izquierdo">
+                <h3>Filtrar por:</h3>
+                <div>
+                    <input type="radio" class="visualizar" value="abierta" id="abierta" name="filtro" onclick="pintar('citas')">
+                    <label for="abierta">Abiertas</label>
+                </div>
+                <div>
+                    <input type="radio" class="visualizar" value="cerrada" id="cerrada" name="filtro" onclick="pintar('cerradas')">
+                    <label for="cerrada">Cerradas</label>
+                </div>
+                <div>
+                    <input type="radio" class="visualizar" value="anulada" id="anulada" name="filtro" onclick="pintar('anuladas')">
+                    <label for="anulada">Anuladas</label>
+                </div>
+            </div>
+
+
+            <div class="encabezado_derecho">
+
+                <button id="boton1" onclick="show_crear_cita()">
+              
+                    <img src="boton2.gif" alt="Imagen del botón" width="25%" height="auto" class="gif">
+                    <img src="pokeball.png" alt="" class="pokeball">
+<h2>AGENDAR CITA</h2>
+                </button>
+
+            </div> 
+
+            <div id="crear_cita" class="crear_cita">
+                <div id="fotos0" class="fotos1"></div>
+                <div class="top">
+                    <img src="cerrar1.png" onclick="close_crear_cita(); vaciar()" class="icon-x">
+                    <div class="top_izquierdo">
+                        <div style="line-height: 1%;">
+                            <p>Nombre:</p>
+                            <input type="text" id="nombre">
+                        </div>
+                        <div class="tipo" style="margin-top: 10%; align-items: center;">
+                            <p>Tipo:</p>
+                            <select name="tipo" id="tipo" style="width: 55%; height: 70%;" onchange="fotos()">
+                                <option disabled selected="">Seleccione</option>
+                                <option value="electrico">Electrico</option>
+                                <option value="fuego">Fuego</option>
+                                <option value="agua">Agua</option>
+                                <option value="planta">Planta</option>
+                                <option value="acero">Acero</option>
+                                <option value="psiquico">Psiquico</option>
+                                <option value="normal">Normal</option>
+                                <option value="volador">Volador</option>
+                                <option value="indefinido">Indefinido</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+                    <div class="top_derecho">
+                        <div style="line-height: 1%;">
+                            <p>Propietario:</p>
+                            <input type="text" id="propietario">
+                        </div>
+                        <div style="line-height: 1%;">
+                            <p>Telefono:</p>
+                            <input type="text" id="telefono">
+                        </div>
+                        <div style="line-height: 1%;">
+                            <p>Fecha:</p>
+                            <input type="date" id="fecha">
+                        </div>
+                        <div style="line-height: 1%;">
+                            <p>Hora:</p>
+                            <input type="time" id="hora">
+                        </div>
+                    </div>
+                </div>
+
+                <div style="line-height: 1%;">
+
+                    <p>Sintomas:</p>
+                    <input  type="text" id="sintomas" style="width:40vmax; height: 5vmax;">
+
+                </div>
+
+                <div style="display: flex; justify-content: center;" >
+                    <input type="button" value="GUARDAR" id="boton2" onclick="validar()">
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- -------------------------------------------------------------------------------------------------------------------- -->
+        <div id="contenedor_citas">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- alerta -->
+    <div class="alert-container" id="alert">
+
+        <div class="alert-header">¡Alerta importante!</div>
+        <div id="alert-content"></div>
+        <div class="alert-buttons">
+            <button class="alert-button" onclick="closeAlert()">Aceptar</button>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
